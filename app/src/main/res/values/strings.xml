@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Whiplash</string>
+    <string name="Login">Login</string>
+    <string name="title_activity_log_view">logView</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="middle_button">"Logs "</string>
+    <string name="bottom_left_button">Record</string>
+    <string name="bottom_right_button">STOP</string>
+    <string name="todo">TODO</string>
+    <string name="greetings_medha">Greetings Medha</string>
+    <string name="log_one">Log one</string>
+    <string name="log_two">Log Two</string>
+    <string name="start_new_activity">Start New Activity</string>
+</resources>
