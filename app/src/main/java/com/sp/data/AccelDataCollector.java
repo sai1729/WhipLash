@@ -10,7 +10,7 @@ import java.util.List;
 public class AccelDataCollector implements IAccelerometer{
     private int count = 0;
     private Context context;
-    private final int MAX_EVENT_SIZE = 500;
+    private final int MAX_EVENT_SIZE = 100;
     StringBuilder sensorData = new StringBuilder();
     private final String TAG = "AccelDataCollector";
 

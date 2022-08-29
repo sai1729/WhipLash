@@ -114,7 +114,7 @@ public class LiveData extends AppCompatActivity implements SensorEventListener {
         Logs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LiveData.this,ProjectLogs.class);
+                Intent intent = new Intent(LiveData.this,LogViewData.class);
                 startActivity(intent);
             }
         });
@@ -125,24 +125,12 @@ public class LiveData extends AppCompatActivity implements SensorEventListener {
             public void onClick(View view) {
                 Logs.setClickable(true);
                 Logs.setEnabled(true);
+                recordPause.setEnabled(true);
                 accelDataCollector = null;
-//                Intent intent = new Intent(LiveData.this,LogViewData.class);
-//                Toast toast = Toast.makeText(context, text, duration);
-//                toast.show();
-//                startActivity(intent);
+                Toast toast = Toast.makeText(context, "File writing success", duration);
+                toast.show();
             }
         });
-
-//        recordPause = findViewById(R.id.recordButton);
-//        recordPause.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(LiveData.this,LogViewData.class);
-//                Toast toast = Toast.makeText(context, text, duration);
-//                toast.show();
-//                startActivity(intent);
-//            }
-//        });
 
         recordPause = findViewById(R.id.recordButton);
         recordPause.setOnClickListener(new View.OnClickListener() {
@@ -151,6 +139,7 @@ public class LiveData extends AppCompatActivity implements SensorEventListener {
                 accelDataCollector = new AccelDataCollector(getApplicationContext());
                 Logs.setClickable(false);
                 Logs.setEnabled(false);
+                recordPause.setEnabled(false);
 //
 //                Toast toast = Toast.makeText(context, text, duration);
 //                toast.show();
